@@ -1,0 +1,401 @@
+{
+  "@context": {
+    "edc": "https://w3id.org/edc/v0.0.1/ns/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcatlds": "http://w3id.org/lang-dcat-ap/",
+    "dct": "http://purl.org/dc/terms/",
+    "adms": "http://www.w3.org/ns/adms#",
+    "ms": "http://w3id.org/meta-share/meta-share/",
+    "loc": "http://id.loc.gov/vocabulary/iso639-1/",
+    "iana": "http://www.iana.org/assignments/media-types/application/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "@vocab": "https://w3id.org/edc/v0.0.1/ns/",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "dspace": "https://w3id.org/dspace/v0.8/",
+    "omtd": "http://w3id.org/meta-share/omtd-share/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "euvoc_auth": "http://publications.europa.eu/resource/authority/",
+    "schema": "https://schema.org/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "lds": "https://lds.eu/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "lexmeta": "http://w3id.org/meta-share/lexmeta#",
+    "dpv": "https://w3id.org/dpv#",
+    "it6": "http://data.europa.eu/it6/"
+  },
+  "ms:lrType": {
+    "@id": "ms:mlModel"
+  },
+  "dct:title": [
+    {
+      "@value": "GaMS3-12B-Instruct",
+      "@language": "en"
+    },
+    {
+      "@value": "GaMS3-12B-Instruct",
+      "@language": "sl"
+    }
+  ],
+  "dct:description": [
+    {
+      "@value": "GaMS3-12B-Instruct represents the next generation of the GaMS (Generative Model for Slovene) model. The model is based on Google's Gemma 3 family and continually pretrained on Slovene, English, and some portion of Croatian, Serbian, and Bosnian corpora. The supervised fine-tuning phase was done on a combination of Slovene and English datasets.",
+      "@language": "en"
+    },
+    {
+      "@value": "GaMS3-12B-Instruct predstavlja naslednjo generacijo modela GaMS (Generativni model za slovenščino). Model temelji na družini Google Gemma 3 in je bil kontinuirano vnaprej naučen na slovenskih, angleških ter deloma hrvaških, srbskih in bosanskih korpusih. Faza nadzorovanega finega uglasbevanja je bila izvedena na kombinaciji slovenskih in angleških naborov podatkov.",
+      "@language": "sl"
+    }
+  ],
+  "dct:creator": [
+    {
+      "@type": "foaf:Person",
+      "foaf:name": "Domen Vreš"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": "Iztok Lebar Bajec"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": "Tjaša Arčon"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": "Timotej Petrič"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": "Dario Vajda"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:name": "Marko Robnik-Šikonja"
+    }
+  ],
+  "ms:variantOf": {
+    "@id": "https://huggingface.co/google/gemma-3-12b-pt"
+  },
+  "dcat:landingPage": {
+    "@id": "https://huggingface.co/cjvt/GaMS3-12B-Instruct"
+  },
+  "dcat:version": "1.0",
+  "dcat:keyword": [
+    {
+      "@value": "Gemma3",
+      "@language": "en"
+    },
+    {
+      "@value": "Language specific",
+      "@language": "en"
+    },
+    {
+      "@value": "Slovene",
+      "@language": "en"
+    }
+  ],
+  "dct:publisher": {
+    "@id": "https://www.cjvt.si/",
+    "@type": "foaf:Organization",
+    "foaf:name": [
+      {
+        "@value": "Center za jezikovne vire in tehnologije Univerze v Ljubljani",
+        "@language": "sl"
+      },
+      {
+        "@value": "Centre for Language Resources and Technologies at the University of Ljubljana",
+        "@language": "en"
+      }
+    ]
+  },
+  "dcat:distribution": [
+    {
+      "@type": "dcat:Distribution",
+      "ms:size": [
+        {
+          "ms:amount": 23.6,
+          "ms:sizeUnit": {
+            "@id": "ms:gb"
+          }
+        }
+      ],
+      "dcat:byteSize": 23600000000,
+      "dcat:downloadURL": "https://huggingface.co/cjvt/GaMS3-12B-Instruct",
+      "dcat:mediaType": [],
+      "dct:format": [
+        {
+          "@id": "omtd:BinaryFormat" # TODO
+        }
+      ]
+    }
+  ],
+  "ms:sensitiveDataIncluded": {
+    "@id": "ms:unknownS"
+  },
+  "ms:personalDataIncluded": {
+    "@id": "ms:noP"
+  },
+  "ms:anonymized": {
+    "@id": "ms:yesA"
+  },
+  "ms:mediaType": [
+    {
+      "@id": "ms:text"
+    }
+  ],
+  "ms:lingualityType": {
+    "@id": "ms:multilingual"
+  },
+  "ms:language": [
+    {
+      "@type": "ms:Language",
+      "ms:languageCode": {
+        "@id": "http://w3id.org/meta-share/bcp47/language_sl"
+      },
+      "ms:languageTag": "sl"
+    },
+    {
+      "@type": "ms:Language",
+      "ms:languageCode": {
+        "@id": "http://w3id.org/meta-share/bcp47/language_en"
+      },
+      "ms:languageTag": "en"
+    },
+    {
+      "@type": "ms:Language",
+      "ms:languageCode": {
+        "@id": "http://w3id.org/meta-share/bcp47/language_hr"
+      },
+      "ms:languageTag": "hr"
+    },
+    {
+      "@type": "ms:Language",
+      "ms:languageCode": {
+        "@id": "http://w3id.org/meta-share/bcp47/language_sr"
+      },
+      "ms:languageTag": "sr"
+    },
+    {
+      "@type": "ms:Language",
+      "ms:languageCode": {
+        "@id": "http://w3id.org/meta-share/bcp47/language_bs"
+      },
+      "ms:languageTag": "bs"
+    }
+  ],
+  "dct:language": [
+    {
+      "@id": "euvoc_auth:language/SLV"
+    },
+    {
+      "@id": "euvoc_auth:language/ENG"
+    },
+    {
+      "@id": "euvoc_auth:language/HRV"
+    },
+    {
+      "@id": "euvoc_auth:language/SRP"
+    },
+    {
+      "@id": "euvoc_auth:language/BOS"
+    }
+  ],
+  "ms:modelFunction": [
+    {
+      "@id": "omtd:QuestionAnswering"
+    },
+    {
+      "@id": "omtd:TextGeneration"
+    }
+  ],
+  "it6:trainedOn": [
+    {
+      "@type": "dcat:Dataset",
+      "dct:title": [
+        {
+          "@value": "Slovene, English and South Slavic mixed pretraining corpora",
+          "@language": "en"
+        }
+      ],
+      "dct:description": [
+        {
+          "@value": "A large mixture of continually pretraining corpora in Slovene, English, Croatian, Serbian and Bosnian, including web, encyclopedic, legal, academic, OCR-ed historical texts, and synthetic data. Major sources include Wikipedia, FineWeb-2, FinePDFS, CLARIN.SI corpora (e.g. KAS, MaCoCu, Trendi, MetaFida), Nemotron pretraining datasets, and digitised collections from the National and University Library of Slovenia.",
+          "@language": "en"
+        }
+      ]
+    },
+    {
+      "@type": "dcat:Dataset",
+      "dct:title": [
+        {
+          "@value": "Wikipedia (multilingual)",
+          "@language": "en"
+        }
+      ],
+      "dct:description": [
+        {
+          "@value": "English, Slovene, Croatian, Serbian and Bosnian Wikipedia content, including translated and aligned parallel corpora used during continual pretraining and long-context training.",
+          "@language": "en"
+        }
+      ],
+      "dcat:landingPage": {
+        "@id": "https://www.wikipedia.org/"
+      }
+    },
+    {
+      "@type": "dcat:Dataset",
+      "dct:title": [
+        {
+          "@value": "CLARIN.SI language resources",
+          "@language": "en"
+        }
+      ],
+      "dct:description": [
+        {
+          "@value": "Open Slovene and multilingual corpora from the CLARIN.SI repository, including KAS, MaCoCu, Trendi, MetaFida, legal, medical, academic and thesis collections, used for continual pretraining and long-context training.",
+          "@language": "en"
+        }
+      ],
+      "dcat:landingPage": {
+        "@id": "https://www.clarin.si/"
+      }
+    },
+    {
+      "@type": "dcat:Dataset",
+      "dct:title": [
+        {
+          "@value": "Nemotron pretraining and post-training datasets",
+          "@language": "en"
+        }
+      ],
+      "dct:description": [
+        {
+          "@value": "High-quality English synthetic and curated datasets from NVIDIA Nemotron, including general, mathematical, STEM, question answering, and chat data, used during continual pretraining and supervised fine-tuning.",
+          "@language": "en"
+        }
+      ],
+      "dcat:landingPage": {
+        "@id": "https://huggingface.co/datasets/nvidia"
+      }
+    },
+    {
+      "@type": "dcat:Dataset",
+      "dct:title": [
+        {
+          "@value": "GaMS instruction-following and safety datasets",
+          "@language": "en"
+        }
+      ],
+      "dct:description": [
+        {
+          "@value": "Proprietary and project-internal instruction-following, conversational and safety datasets developed within the GaMS and PoVeJMo projects, including Slovene and English question answering, writing, code, chat, and safety prompts.",
+          "@language": "en"
+        }
+      ]
+    }
+  ],
+  "ms:quantized": false,
+  "ms:modelType": {
+    "@id": "ms:languageModel"
+  },
+  "@type": "dcat:Dataset",
+  "odrl:hasPolicy": [
+    {
+      "@type": "odrl:Offer",
+      "dct:title": [
+        {
+          "@value": "Gemma License",
+          "@language": "en"
+        }
+      ],
+      "dct:description": [
+        {
+          "@value": "This resource is licensed under the Gemma License, which governs the use, modification, and redistribution of the Gemma model weights and derivative models. Use is subject to the terms and conditions defined by Google.",
+          "@language": "en"
+        }
+      ],
+      "dct:source": {
+        "@id": "https://ai.google.dev/gemma/terms"
+      },
+      "odrl:permission": [
+        {
+          "odrl:action": {
+            "@id": "odrl:use"
+          }
+        },
+        {
+          "odrl:action": {
+            "@id": "odrl:reproduce"
+          }
+        },
+        {
+          "odrl:action": {
+            "@id": "odrl:modify"
+          }
+        },
+        {
+          "odrl:action": {
+            "@id": "odrl:derive"
+          }
+        },
+        {
+          "odrl:action": {
+            "@id": "odrl:distribute"
+          }
+        }
+      ],
+      "odrl:prohibition": [
+        {
+          "odrl:action": {
+            "@id": "odrl:use"
+          },
+          "odrl:constraint": [
+            {
+              "odrl:leftOperand": "odrl:purpose",
+              "odrl:operator": "odrl:isAnyOf",
+              "odrl:rightOperand": [
+                "illegal-activity",
+                "malicious-use",
+                "restricted-by-law"
+              ]
+            }
+          ]
+        }
+      ],
+      "odrl:duty": [
+        {
+          "odrl:action": {
+            "@id": "odrl:attribution"
+          }
+        },
+        {
+          "odrl:action": {
+            "@id": "odrl:notice"
+          }
+        }
+      ]
+    }
+  ],
+  "dct:license": [
+    {
+      "@type": "dct:LicenseDocument",
+      "dct:title": [
+        {
+          "@value": "Gemma License",
+          "@language": "en"
+        }
+      ],
+      "dct:description": [
+        {
+          "@value": "This resource is licensed under the Gemma License, which governs the use, modification, and redistribution of the Gemma model weights and derivative models. Use of this resource is subject to the terms and conditions defined by Google.",
+          "@language": "en"
+        }
+      ],
+      "dct:source": {
+        "@id": "https://ai.google.dev/gemma/terms"
+      }
+    }
+  ]
+}
