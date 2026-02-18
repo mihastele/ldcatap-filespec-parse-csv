@@ -123,10 +123,14 @@
       ],
       "dcat:byteSize": 23600000000,
       "dcat:downloadURL": "https://huggingface.co/cjvt/GaMS3-12B-Instruct",
-      "dcat:mediaType": [],
+      "dcat:mediaType": [
+        {
+          "@id": "iana:octet-stream"
+        }
+      ],
       "dct:format": [
         {
-          "@id": "omtd:BinaryFormat" # TODO
+          "@id": "omtd:BinaryFormat"
         }
       ]
     }
